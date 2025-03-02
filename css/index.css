@@ -177,6 +177,10 @@ header > .collapsible-header{
     color: #fff;
 }
 
+.submit-form {
+    box-shadow: 0 2px 8px 1px rgb(167 6 251 / 35%);
+} 
+
 
 /* Style for the collapsible content such as faq commonly known as: accordion */
 
