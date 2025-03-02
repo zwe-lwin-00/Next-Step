@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Slider</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@tabler/icons"></script>
+    <script src="https://unpkg.com/tiny-slider"></script>
+    <style>
+        .carousel {
+            overflow: hidden;
+            position: relative;
+        }
+        .carousel-body {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel-slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+        .carousel-pagination button {
+            width: 10px;
+            height: 10px;
+            background-color: gray;
+            border-radius: 50%;
+            border: none;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .carousel-pagination .active {
+            background-color: black;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+    <!-- Slider -->
+    <div id="carouselContainer" class="relative w-full max-w-2xl">
+        <div class="carousel h-300">
+            <div class="carousel-body">
+                <div class="carousel-slide">
+                    <div class="bg-gray-300 flex h-full justify-center p-6">
+                        <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]"
+                >
+                <img
+                    src="https://onecdn.io/media/c06251c3-5216-4568-b345-795dd0ce195f/sm2x"
+                    class="tw-h-full tw-w-full tw-object-cover"
+                    alt="man"
+                />
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        I'm absolutely thrilled! After hitting my goals, 
+                        I received the Nike Air Mag 'Back To The Future' sneakers. 
+                        The design is beyond cool, and every time I wear them, 
+                        I feel like I’ve traveled to the future. The whole process was smooth, 
+                        and the team was super helpful. I love how this event combines challenge 
+                        and reward. Highly recommend it to fellow sneakerheads!
+                    </p>
+
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">CRAIG M</div>
+                            <div class="tw-text-gray-400">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="bg-gray-400 flex h-full justify-center p-6">
+                        <img src="https://thumbs.dreamstime.com/b/happy-coworkers-group-young-modern-people-smart-casual-wear-discussing-something-smiling-working-creative-144907835.jpg" alt="Second slide">
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="bg-gray-500 flex h-full justify-center p-6">
+                        <span class="self-center text-2xl sm:text-4xl">Third slide</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <button id="prevBtn" class="absolute top-1/2 left-3 transform -translate-y-1/2">
+            <span class="bg-white p-2 rounded-full shadow">
+                <i class="icon-[tabler--chevron-left] size-5"></i>
+            </span>
+        </button>
+        <button id="nextBtn" class="absolute top-1/2 right-3 transform -translate-y-1/2">
+            <span class="bg-white p-2 rounded-full shadow">
+                <i class="icon-[tabler--chevron-right] size-5"></i>
+            </span>
+        </button>
+    
+        <div class="carousel-pagination absolute bottom-3 left-1/2 transform -translate-x-1/2 flex gap-2"></div>
+    </div>
+    <!-- End Slider -->
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const slides = document.querySelectorAll(".carousel-slide");
+            const totalSlides = slides.length;
+            const body = document.querySelector(".carousel-body");
+            const pagination = document.querySelector(".carousel-pagination");
+            let currentIndex = 0;
+
+            function updateSlide() {
+                body.style.transform = `translateX(-${currentIndex * 100}%)`;
+                document.querySelectorAll(".carousel-pagination button").forEach((btn, index) => {
+                    btn.classList.toggle("active", index === currentIndex);
+                });
+            }
+
+            slides.forEach((_, i) => {
+                const btn = document.createElement("button");
+                btn.addEventListener("click", () => {
+                    currentIndex = i;
+                    updateSlide();
+                });
+                pagination.appendChild(btn);
+            });
+
+            document.getElementById("prevBtn").addEventListener("click", () => {
+                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                updateSlide();
+            });
+
+            document.getElementById("nextBtn").addEventListener("click", () => {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateSlide();
+            });
+
+            updateSlide();
+        });
+    </script>
+</body>
+</html>
