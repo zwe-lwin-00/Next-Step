@@ -1,0 +1,1090 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Next Step</title>
+        <meta name="description" content="" />
+        <link
+            rel="shortcut icon"
+            href="https://onecdn.io/media/da1b977b-be94-481d-9d53-f9a0bd3c8f6d/md2x"
+            type="image/x-icon"
+        />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:title" content="Title of the project" />
+        <meta property="og:description" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://github.com/PaulleDemon" />
+        <!--Replace with the current website url-->
+        <meta property="og:image" content="" />
+
+        <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css" /> -->
+        <link rel="stylesheet" href="./css/tailwind-build.css">
+        <link rel="stylesheet" href="css/index.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+            integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body
+        class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-black tw-text-white"
+    >
+        <header
+            class="tw-max-w-lg:tw-px-4 tw-max-w-lg:tw-mr-auto tw-absolute tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-bg-opacity-0 tw-px-[5%] lg:tw-justify-around"
+        >
+            <a class="tw-h-[50px] tw-w-[50px] tw-p-[4px]" href="">
+                <img
+                    src="./assets/logo/logo.png"
+                    alt="logo"
+                    class="tw-object tw-h-full tw-w-full"
+                />
+            </a>
+            <div
+                class="collapsible-header animated-collapse max-lg:tw-shadow-md"
+                id="collapsed-header-items"
+            >
+                <div
+                    class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center"
+                >
+                    <a class="header-links" href="">Home</a>
+                    <a class="header-links" href="#companyinfo">About Us</a>
+                    <a class="header-links" href="#careers">Careers</a>
+                    <a class="header-links" href="#contactus">Contact Us</a>
+                    <a class="header-links" href="#reviews">Reviews</a>
+                </div>
+                <div
+                    class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center"
+                >
+                    <a
+                        href=""
+                        aria-label="signup"
+                        class="tw-rounded-full tw-bg-white tw-px-3 tw-py-2 tw-text-black tw-transition-transform tw-duration-[0.3s] hover:tw-translate-x-2"
+                    >
+                        <span>Get started</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <button
+                class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-white lg:tw-hidden"
+                onclick="toggleHeader()"
+                aria-label="menu"
+                id="collapse-btn"
+            ></button>
+        </header>
+
+        <section
+            class="hero-section tw-relative tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-md:tw-mt-[50px]"
+            id="hero-section"
+        >
+            <div
+                class="tw-flex tw-h-full tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-gap-6 tw-p-[5%] max-xl:tw-place-items-center max-lg:tw-p-4"
+            >
+                <div
+                    class="tw-flex tw-flex-col tw-place-content-center tw-items-center"
+                >
+                    <div
+                        class="reveal-up gradient-text tw-text-center tw-text-3xl tw-font-semibold tw-uppercase tw-leading-[50px] max-lg:tw-text-4xl max-md:tw-leading-snug"
+                    >
+                        <span class=""> Grow with us and unlock your full potential as we build a brighter future together. </span>
+                        <br />
+                        <!-- <span class=""> with SaaS templates </span> -->
+                    </div>
+                    <div
+                        class="reveal-up tw-mt-10 tw-max-w-[450px] tw-p-2 tw-text-center tw-text-gray-300 max-lg:tw-max-w-full"
+                    >
+                    Hero sections usually come right after the menu. They're designed to grab attention and keep it, hopefully encouraging visitors to click the button below.
+                    </div>
+
+                    <div
+                        class="reveal-up tw-mt-10 tw-flex tw-place-items-center tw-gap-4"
+                    >
+                        <a
+                            class="btn tw-bg-[#7e22ce85] tw-shadow-lg tw-shadow-primary tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]"
+                            href=""
+                        >
+                            Get started
+                        </a>
+                        <a
+                            class="btn tw-flex tw-gap-2 !tw-bg-black !tw-text-white tw-transition-colors tw-duration-[0.3s] hover:!tw-bg-white hover:!tw-text-black"
+                            href=""
+                        >
+                            <i class="bi bi-play-circle-fill"></i>
+                            <span>Learn more</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="reveal-up tw-relative tw-mt-8 tw-flex tw-w-full tw-place-content-center tw-place-items-center"
+                    id="dashboard-container"
+                >
+                    <div
+                        class="tw-relative tw-max-w-[80%] tw-overflow-hidden tw-rounded-xl tw-bg-transparent max-md:tw-max-w-full"
+                        id="dashboard"
+                    >
+                        <!-- <img
+                            src="./assets/images/home/dashboard.png"
+                            alt="dashboard"
+                            class="tw-h-full tw-w-full tw-object-cover tw-opacity-90 max-lg:tw-object-contain"
+                        /> -->
+                        <iframe width="641" height="361" src="https://www.youtube.com/embed/z7yjLzvFqsk" title="Notion 2.32: Video Release Note" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+                    </div>
+
+                    <div
+                        class="hero-img-bg-grad tw-absolute tw-left-[20%] tw-top-5 tw-h-[200px] tw-w-[200px]"
+                    ></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-8"
+        >
+            <p class="reveal-up tw-text-3xl max-md:tw-text-xl" style="font-size: 14px;">
+                Industries that are currently available to participate <br>
+                - Technology, Finance, Healthcare, Education, Creative, Manufacturing & Engineering, Retail & Service, Legal, Public Sector & Non-Profit, Media & Communications.
+            </p>
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+        >
+            <div
+                class="tw-mt-8 tw-flex tw-flex-col tw-place-items-center tw-gap-5"
+            >
+                <div
+                    class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center"
+                >
+                    <h2
+                        class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-3xl"
+                    >
+                        STEPS
+                    </h2>
+                </div>
+                <div
+                    class="tw-mt-6 tw-flex tw-max-w-[80%] tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col"
+                >
+                    <div
+                        class="reveal-up tw-flex tw-h-[400px] tw-w-[450px] tw-flex-col tw-gap-3 tw-text-center max-md:tw-w-[320px]"
+                    >
+                        <div
+                            class="border-gradient tw-h-[200px] tw-w-full tw-overflow-hidden max-md:tw-h-[150px]"
+                        >
+                            <div
+                                class="tw-flex tw-h-full tw-w-full tw-place-content-center tw-place-items-end tw-p-2"
+                            >
+                                <i
+                                    class="bi bi-clipboard-check tw-text-7xl tw-text-gray-200 max-md:tw-text-5xl"
+                                ></i>
+                            </div>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-4 tw-p-2">
+                            <h3
+                                class="tw-mt-8 tw-text-2xl tw-font-normal max-md:tw-text-xl"
+                            >
+                                Apply for the job position
+                            </h3>
+                            <div class="tw-text-gray-300">
+                                Don’t miss the chance to be part of something great. Apply for the job position.
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="reveal-up tw-flex tw-h-[400px] tw-w-[450px] tw-flex-col tw-gap-3 tw-text-center max-md:tw-w-[320px]"
+                    >
+                        <div
+                            class="border-gradient tw-h-[200px] tw-w-full tw-overflow-hidden max-md:tw-text-[150px]"
+                        >
+                            <div
+                                class="tw-flex tw-h-full tw-w-full tw-place-content-center tw-place-items-end tw-p-2"
+                            >
+                                <i
+                                    class="bi bi-envelope-check tw-text-7xl tw-text-gray-200 max-md:tw-text-5xl"
+                                ></i>
+                            </div>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-4 tw-p-2">
+                            <h3
+                                class="tw-mt-8 tw-text-2xl tw-font-normal max-md:tw-text-xl"
+                            >
+                                Receive a confirmation
+                            </h3>
+                            <div class="tw-text-gray-300">
+                                You will receive a confirmation once your application has been successfully submitted.
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="reveal-up tw-flex tw-h-[400px] tw-w-[450px] tw-flex-col tw-gap-3 tw-text-center max-md:tw-w-[320px]"
+                    >
+                        <div
+                            class="border-gradient tw-h-[200px] tw-w-full tw-overflow-hidden max-md:tw-h-[150px]"
+                        >
+                            <div
+                                class="tw-flex tw-h-full tw-w-full tw-place-content-center tw-place-items-end tw-p-2"
+                            >
+                                <i
+                                    class="bi bi-clock tw-text-7xl tw-text-gray-200 max-md:tw-text-5xl"
+                                ></i>
+                            </div>
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-4 tw-p-2">
+                            <h3
+                                class="tw-mt-8 tw-text-2xl tw-font-normal max-md:tw-text-xl"
+                            >
+                                Expect an anwser in a day
+                            </h3>
+                            <div class="tw-text-gray-300">
+                                You can expect an answer within a day after we review your application.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-8"
+        id="companyinfo">
+            <h2 class="reveal-up tw-text-3xl max-md:tw-text-xl">
+                About the company
+            </h2>
+            <p class="tw-text-center tw-max-w-xl">
+            We have established partnerships with more than 100 companies, creating numerous job openings.
+            </p>
+
+            <div class="reveal-up carousel-container">
+                <div
+                    class="carousel lg:w-place-content-center tw-mt-6 tw-flex tw-w-full tw-gap-5 max-md:tw-gap-2"
+                >
+                    <!-- add the brands using your app  -->
+                    <div class="carousel-img tw-h-[100%] tw-w-[150px]">
+                        <img
+                            src="C:\Users\zwelw\Desktop\Next Step\assets\images\work\01.png"
+                            alt="Work 1"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[100%] tw-w-[150px]">
+                        <img
+                            src="C:\Users\zwelw\Desktop\Next Step\assets\images\work\02.jpg"
+                            alt="Work 2"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[100%] tw-w-[150px]">
+                        <img
+                            src="C:\Users\zwelw\Desktop\Next Step\assets\images\work\03.jpg"
+                            alt="Work 3"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[100%] tw-w-[150px]">
+                        <img
+                        src="C:\Users\zwelw\Desktop\Next Step\assets\images\work\04.jpg"
+                            alt="Work 4"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[100%] tw-w-[150px]">
+                        <img
+                        src="C:\Users\zwelw\Desktop\Next Step\assets\images\work\05.jpg"
+                            alt="Work 5"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[100%] tw-w-[150px]">
+                        <img
+                        src="C:\Users\zwelw\Desktop\Next Step\assets\images\work\06.jpg"
+                            alt="Work 6"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- JavaScript -->
+    <script>
+        // Select all clickable images
+        const images = document.querySelectorAll(".clickable-image");
+
+        images.forEach(img => {
+            img.addEventListener("click", function () {
+                // If already enlarged, remove the class
+                if (this.classList.contains("enlarged")) {
+                    this.classList.remove("enlarged");
+                } else {
+                    // Remove enlarged class from any other image first
+                    images.forEach(image => image.classList.remove("enlarged"));
+                    this.classList.add("enlarged");
+                }
+            });
+        });
+    </script>
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        <section
+            class="tw-relative tw-flex tw-min-h-[80vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+            >
+            <div
+                class="tw-mt-8 tw-flex tw-flex-col tw-place-items-center tw-gap-5"
+            >
+                <div
+                    class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center"
+                >
+                    
+                    <h2
+                        class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-2xl"
+                    >
+                    4 good reasons to grow with us
+                    </h2>
+                    <p
+                        class="tw-text-1xl tw-font-medium tw-text-gray-200 max-md:tw-text-2xl"
+                    >
+                    Join us and discover four great reasons to grow your career with our dynamic team and exciting opportunities.
+                    </p>
+                </div>
+                <div
+                    class="tw-mt-6 tw-flex tw-max-w-[80%] tw-flex-wrap tw-place-content-center tw-gap-8 max-lg:tw-flex-col"
+                >
+                    <div
+                        class="reveal-up tw-flex tw-h-[300px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
+                    >
+                        <div class="tw-text-4xl max-md:tw-text-2xl">
+                            <i class="bi bi-graph-up"></i>
+                        </div>
+
+                        <div class="tw-flex tw-flex-col tw-gap-4">
+                            <h3 class="tw-text-2xl max-md:tw-text-xl">
+                                Career Growth
+                            </h3>
+                            <p class="tw-text-gray-300 max-md:tw-text-sm">
+                                We offer excellent opportunities for both personal
+                                and professional development, providing
+                                continuous learning and career advancement
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="reveal-up tw-flex tw-h-[300px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
+                    >
+                        <div class="tw-text-4xl max-md:tw-text-2xl">
+                            <i class="bi bi-person-lines-fill"></i>
+                        </div>
+
+                        <div class="tw-flex tw-flex-col tw-gap-4">
+                            <h3 class="tw-text-2xl max-md:tw-text-xl">
+                                Competitive Benefits
+                            </h3>
+                            <p class="tw-text-gray-300 max-md:tw-text-sm">
+                                Enjoy a competitive salary and a comprehensive benefits package, 
+                                including health insurance, retirement plans, 
+                                and other perks designed to support your well-being and financial security.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="reveal-up tw-flex tw-h-[300px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
+                    >
+                        <div class="tw-text-4xl max-md:tw-text-2xl">
+                            <i class="bi bi-piggy-bank"></i>
+                        </div>
+
+                        <div class="tw-flex tw-flex-col tw-gap-4">
+                            <h3 class="tw-text-2xl max-md:tw-text-xl">
+                                Collaborative Environment
+                            </h3>
+                            <p class="tw-text-gray-300 max-md:tw-text-sm">
+                                Work alongside passionate and supportive colleagues 
+                                who are always eager to collaborate, share knowledge, 
+                                and help each other succeed.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="reveal-up tw-flex tw-h-[300px] tw-w-[450px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px]"
+                    >
+                        <div class="tw-text-4xl max-md:tw-text-2xl">
+                            <i class="bi bi-brightness-high"></i>
+                        </div>
+
+                        <div class="tw-flex tw-flex-col tw-gap-4">
+                            <h3 class="tw-text-2xl max-md:tw-text-xl">
+                                Diverse Opportunities
+                            </h3>
+                            <p class="tw-text-gray-300 max-md:tw-text-sm">
+                                With over 100 partner companies, you’ll have access to a wide range of job roles. 
+                                This opens up various career paths, 
+                                allowing you to explore opportunities in different industries.
+                            </p>
+                        </div>
+                    </div>
+
+                    
+
+                    
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section
+            class="tw-relative tw-flex tw-min-h-[80vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
+        id="careers">
+            <div
+                class="reveal-up tw-flex tw-min-h-[60vh] tw-place-content-center tw-place-items-center tw-gap-[10%] max-lg:tw-flex-col max-lg:tw-gap-10"
+            >
+                <div
+                    class="tw-flex tw-w-full tw-max-w-[80%] tw-place-content-center tw-place-items-center tw-justify-between tw-gap-3 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-6 max-md:tw-max-w-full max-md:tw-flex-col"
+                >
+                    <div class="tw-flex tw-flex-col tw-gap-1">
+                        <h2 class="tw-text-3xl tw-text-gray-300 max-md:tw-text-xl">
+                            Submit the form with the requested information
+                        </h2>
+                        <div class="tw-text-gray-300">Please fill out the form below.</div>
+                    </div>
+
+                    <form
+                        class="tw-flex tw-flex-col tw-gap-4 tw-w-full"
+                        action="#" method="POST"
+                    >
+                        <!-- First Name -->
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <label for="first-name" class="tw-text-gray-300">First Name</label>
+                            <input
+                                type="text"
+                                id="first-name"
+                                name="first-name"
+                                class="input tw-h-[40px] tw-w-full tw-border-gray-600 tw-p-2 tw-outline-none"
+                                placeholder="First Name"
+                                required
+                            />
+                        </div>
+
+                        <!-- Last Name -->
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <label for="last-name" class="tw-text-gray-300">Last Name</label>
+                            <input
+                                type="text"
+                                id="last-name"
+                                name="last-name"
+                                class="input tw-h-[40px] tw-w-full tw-border-gray-600 tw-p-2 tw-outline-none"
+                                placeholder="Last Name"
+                                required
+                            />
+                        </div>
+
+                        <!-- Email -->
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <label for="email" class="tw-text-gray-300">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="input tw-h-[40px] tw-w-full tw-border-gray-600 tw-p-2 tw-outline-none"
+                                placeholder="Email"
+                                required
+                            />
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <label for="phone" class="tw-text-gray-300">Phone Number</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                class="input tw-h-[40px] tw-w-full tw-border-gray-600 tw-p-2 tw-outline-none"
+                                placeholder="Phone Number"
+                                required
+                            />
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="tw-flex tw-h-[60px] tw-place-items-center tw-gap-2 tw-overflow-hidden tw-p-2">
+                            <button
+                                type="submit"
+                                class="btn !tw-rounded-full !tw-border-[1px] !tw-border-solid !tw-border-gray-300 !tw-bg-transparent tw-transition-colors tw-duration-[0.3s]"
+                            >
+                                Apply for a position
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Steps Section -->
+                <div
+                    class="tw-mt-6 tw-flex tw-max-w-[450px] tw-flex-col tw-gap-4"
+                >
+                    <!-- <h3 class="tw-text-4xl tw-font-medium max-md:tw-text-2xl">
+                        Simple Steps
+                    </h3> -->
+
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                            Apply for the job position
+                        </h4>
+                        <span
+                            class="tw-text-lg tw-text-gray-300 max-md:tw-text-base"
+                        >
+                            Don’t miss the chance to be part of something great. 
+                            Apply for the job position today and take the first step towards an exciting career with us!
+                        </span>
+                    </div>
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                            Receive a confirmation
+                        </h4>
+                        <span
+                            class="tw-text-lg tw-text-gray-300 max-md:tw-text-base"
+                        >
+                        You will receive a confirmation once your application has been successfully submitted, 
+                        and we will notify you of the next steps in the process.
+                        </span>
+                    </div>
+                    <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
+                        <h4 class="tw-text-xl tw-font-medium">
+                            <i class="bi bi-check-all !tw-text-2xl"></i>
+                            Expect an answer in a day
+                        </h4>
+                        <span
+                            class="tw-text-lg tw-text-gray-300 max-md:tw-text-base"
+                        >
+                        You can expect an answer within a day after we review your application, 
+                        as we carefully evaluate all submissions and respond promptly with the next steps.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section
+            class="tw-mt-5 tw-flex tw-min-h-[80vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%]"
+        id="reviews">
+            <h3
+                class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-2xl"
+            >
+                 Achievement and Motivation
+            </h3>
+            <p class="tw-text-center tw-max-w-xl">
+            These programs inspire motivation and help achieve goals once thought out of reach. 
+            With clear guidance and support, challenges turn into wins, 
+            making the journey truly rewarding.
+            </p>
+            <!-- Testimonials -->
+            <div
+                class="tw-mt-8 tw-gap-10 tw-space-y-8 max-md:tw-columns-1 lg:tw-columns-2 xl:tw-columns-3"
+            >
+                <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]"
+                >
+                <img
+                                src="https://onecdn.io/media/ebeed5ac-d2a5-49a5-80f3-709f096809db/sm2x"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="women"
+                            />
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        Thank you so much for this amazing opportunity! I successfully completed the challenge and earned my dream watch—ROLEX 'SPIDER-MAN' GMT-MASTER II! The process was smooth, the activity was simple and fun, and the team’s guidance was spot on. Whenever I faced challenges, the support I received from the team helped me reach my goal. To own this unique Rolex is truly a priceless reward! I highly recommend everyone to join this event—it's an opportunity you don't want to miss!
+                    </p>
+
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+                        >
+                            <img
+                                src="./assets/images/people/women.jpg"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="women"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">DEJANA E</div>
+                            <div class="tw-text-gray-400">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]"
+                >
+                <img
+                    src="https://onecdn.io/media/c06251c3-5216-4568-b345-795dd0ce195f/sm2x"
+                    class="tw-h-full tw-w-full tw-object-cover"
+                    alt="man"
+                />
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        I'm absolutely thrilled! After hitting my goals, 
+                        I received the Nike Air Mag 'Back To The Future' sneakers. 
+                        The design is beyond cool, and every time I wear them, 
+                        I feel like I’ve traveled to the future. The whole process was smooth, 
+                        and the team was super helpful. I love how this event combines challenge 
+                        and reward. Highly recommend it to fellow sneakerheads!
+                    </p>
+
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+                        >
+                            <img
+                                src="./assets/images/people/man2.jpg"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="man"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">CRAIG M</div>
+                            <div class="tw-text-gray-400">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]"
+                >
+                <img
+                    src="https://onecdn.io/media/0078e3f6-e28a-4fcb-9253-3c311ee2463a/sm2x"
+                    class="tw-h-full tw-w-full tw-object-cover"
+                    alt="man"
+                />
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        Received my Channel bag today and I couldn't be more thrilled! The whole challenge was so easy to complete, no stress at all, and I ended up with this amazing luxury bag. Huge thanks to the team for their support throughout the process. The quality and design of the bag are top-notch, definitely worth it! Highly recommend everyone to join!
+                    </p>
+
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+                        >
+                            <img
+                                src="./assets/images/people/women.jpg"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="man"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Alexander Kirichenko</div>
+                            <div class="tw-text-gray-400">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]"
+                >
+                <img
+                    src="https://onecdn.io/media/3a15aeb3-c995-4e15-92e1-b83a3868a85d/sm2x"
+                    class="tw-h-full tw-w-full tw-object-cover"
+                    alt="man"
+                />
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        I'm beyond thrilled to have received my dream watch-Rolex Submariner 'Hulk'! The entire process was easy and enjoyable, with great guidance and support from the team. Owning this iconic Rolex is truly a huge reward! I'm so grateful for this opportunity and will definitely recommend this event to my friends. It's a fantastic opportunity that's worth joining!
+                    </p>
+
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+                        >
+                            <img
+                                src="./assets/images/people/man.jpg"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="man"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">CAMERON L</div>
+                            <div class="tw-text-gray-400">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]"
+                >
+                <img
+                    src="https://onecdn.io/media/ad3475d0-e37c-47ca-a09c-2abfd4486b2d/sm2x"
+                    class="tw-h-full tw-w-full tw-object-cover"
+                    alt="man"
+                />
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        This event has truly exceeded my expectations!
+                        After working hard to meet the goals, I'm now the proud owner of a Rolex® Oyster Perpetual 41mm
+                        'Tiffany'! The watch is absolutely stunning, with its unique color and elegant design. Throughout the process, the team's support was amazing, and everything from the training to the task instructions was very clear. The best part is there were no hidden fees, making it a totally worthwhile experience. If you want to own a luxury watch, this is definitely an opportunity you shouldn't miss!
+                    </p>
+
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+                        >
+                            <img
+                                src="./assets/images/people/man2.jpg"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="man"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">L CASHEL</div>
+                            <div class="tw-text-gray-400">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]"
+                >
+                <img
+                    src="https://onecdn.io/media/9cd54c16-b98e-4782-9228-4ecb6161db35/sm2x"
+                    class="tw-h-full tw-w-full tw-object-cover"
+                    alt="man"
+                />
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        Joining this event was a great decision! I achieved my goal and received a Balenciaga bag as a reward. The process was straightforward with excellent guidance from the team. The bag is incredibly stylish and luxurious, a perfect fit for my collection. Highly recommend this event to anyone looking for amazing rewards!
+                    </p>
+
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+                        >
+                            <img
+                                src="./assets/images/people/man2.jpg"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="man"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Daniel</div>
+                            <div class="tw-text-gray-400">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- WRONG FROM THIS -->
+                <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]"
+                >
+                <img
+                    src="https://onecdn.io/media/d1efde7c-4132-4c62-989a-2ce765bad1dd/sm2x"
+                    class="tw-h-full tw-w-full tw-object-cover"
+                    alt="man"
+                />
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        Absolutely thrilled with my new Rolex Daytona
+                        'Darth Vader! The sleek design and craftsmanship are unmatched. 
+                        Truly a dream come true-thank you for this amazing reward!
+                    </p>
+
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+                        >
+                            <img
+                                src="./assets/images/people/man2.jpg"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="man"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">BAILEY A</div>
+                            <div class="tw-text-gray-400">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]"
+                >
+                <img
+                    src="https://onecdn.io/media/bc3ff491-7447-4b83-bacb-85d617ba7a59/sm2x"
+                    class="tw-h-full tw-w-full tw-object-cover"
+                    alt="man"
+                />
+                    <p class="tw-mt-4 tw-text-gray-300">
+                        Winning the Rolex GMT-Master Il 'Batman' was a game-changer! It shows that hard work and dedication truly pay off. This reward motivates me to aim higher-join now and unlock your own success!
+                    </p>
+
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+                        >
+                            <img
+                                src="./assets/images/people/man2.jpg"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="man"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">ADDISON G</div>
+                            <div class="tw-text-gray-400">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                
+
+
+
+            </div>
+        </section>
+
+
+
+
+
+
+        <section
+            class="hero-section tw-relative tw-flex tw-min-h-[30vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-md:tw-mt-[50px]"
+            id="hero-section"
+        >
+            <div
+                class="tw-flex tw-h-full tw-min-h-[30vh] tw-w-full tw-flex-col tw-place-content-center tw-gap-6 tw-p-[5%] max-xl:tw-place-items-center max-lg:tw-p-4"
+            >
+               
+                <div
+                    class="reveal-up tw-relative tw-mt-8 tw-flex tw-w-full tw-place-content-center tw-place-items-center"
+                    id="dashboard-container"
+                >
+                    <div
+                        class="tw-relative tw-max-w-[80%] tw-overflow-hidden tw-rounded-xl tw-bg-transparent max-md:tw-max-w-full"
+                        id="dashboard"
+                    >
+                        <img
+                            src="./assets/images/facebook.jpeg"
+                            alt="dashboard"
+                            class="tw-h-full tw-w-full tw-object-cover tw-opacity-90 max-lg:tw-object-contain"
+                        />
+                    </div>
+
+                    <div
+                        class="hero-img-bg-grad tw-absolute tw-left-[20%] tw-top-5 tw-h-[200px] tw-w-[200px]"
+                    ></div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section
+            class="tw-relative tw-flex tw-min-h-[30vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-4"
+            >
+            <div class="tw-mt-8 tw-flex tw-flex-col tw-place-items-center tw-gap-5">
+                <div class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center">
+                    <h2 class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-2xl">
+                        We received 1,450 applications within 30 days. It's incredible!
+                    </h2>
+                    <p class="tw-text-center tw-max-w-xl">
+                        We are thrilled to announce that we received 1,450 applications within just 30 days! 
+                        The response has been incredible, 
+                        and we’re excited to connect with such a talented pool of candidates.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[5%] tw-p-[4%] tw-px-[8%]"
+        >
+            <div class="tw-mt-20 tw-flex tw-flex-col tw-place-items-center tw-gap-4">
+                <div class="tw-text-3xl max-md:tw-text-2xl">
+                    Still have questions?
+                </div>
+                <a
+                    href="http://"
+                    class="btn !tw-rounded-full !tw-border-[1px] !tw-border-solid !tw-border-gray-300 !tw-bg-transparent tw-transition-colors tw-duration-[0.3s]"
+                >
+                    Contact
+                </a>
+            </div>
+        </section>
+
+        <section
+            class="tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[5%] tw-p-[4%] tw-px-[8%]"
+        >
+            <div class="tw-mt-20 tw-flex tw-flex-col tw-place-items-center tw-gap-4">
+                <div class="tw-text-3xl max-md:tw-text-2xl">
+                    Our corporate partners
+                </div>
+                <p>We’ve built strong relationships with our corporate partners, enabling us to create new opportunities, share resources, and achieve mutual success.</p>
+            </div>
+        </section>
+
+
+
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-8"
+        >
+
+            <div class="reveal-up carousel-container">
+                <div
+                    class="carousel lg:w-place-content-center tw-mt-6 tw-flex tw-w-full tw-gap-5 max-md:tw-gap-2"
+                >
+                    <!-- add the brands using your app  -->
+                    <div class="carousel-img tw-h-[50px] tw-w-[150px]">
+                        <img
+                            src="https://onecdn.io/media/5e8c490c-5519-4da5-8510-d98b9e5c5902/preview"
+                            alt="Tesco"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[50px] tw-w-[150px]">
+                        <img
+                            src="https://onecdn.io/media/02a84188-ff29-4cc3-9fd8-597945235524/sm"
+                            alt="Barclays"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[50px] tw-w-[150px]">
+                        <img
+                            src="https://onecdn.io/media/3e7da3ff-ee7f-4839-aad3-772f882702a1/sm"
+                            alt="Landrover"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[50px] tw-w-[150px]">
+                        <img
+                            src="https://onecdn.io/media/1969f972-e456-4b9f-8f61-2839f0ba836c/sm"
+                            alt="John"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[50px] tw-w-[150px]">
+                        <img
+                            src="https://onecdn.io/media/a59784b5-26db-4e77-add6-5a4cb6de4cf9/sm"
+                            alt="Coffee"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[50px] tw-w-[150px]">
+                        <img
+                            src="https://onecdn.io/media/09ccb45a-5161-414b-b563-15a7c64021e0/sm"
+                            alt="BMW"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[50px] tw-w-[150px]">
+                        <img
+                            src="https://onecdn.io/media/09ccb45a-5161-414b-b563-15a7c64021e0/sm"
+                            alt="BMW"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[50px] tw-w-[150px]">
+                        <img
+                            src="https://onecdn.io/media/66052e7a-ddcc-4c41-8d59-e164e43c56fb/sm"
+                            alt="KFC"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer
+            class="tw-mt-auto tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-p-[5%] tw-px-[10%] tw-text-white max-md:tw-flex-col"
+        id="contactus">
+            
+
+            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+                <h2 class="tw-text-3xl max-md:tw-text-xl">Company</h2>
+                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                    <a href="" class="footer-link">Home</a>
+                    <a href="#companyinfo" class="footer-link">About Us</a>
+                    <a href="#careers" class="footer-link">Careers</a>
+                    <a href="#reviews" class="footer-link">Why Choose Us</a>
+                </div>
+            </div>
+
+            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+                <h2 class="tw-text-3xl max-md:tw-text-xl">Services</h2>
+                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                    <a href="#contactus" class="footer-link">Career Growth</a>
+                    <a href="#contactus" class="footer-link">Competitive Benefits</a>
+                    <a href="#contactus" class="footer-link">Collaborative Environment</a>
+                    <a href="#contactus" class="footer-link">Diverse Opportunities</a>
+                </div>
+            </div>
+
+            <div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-gap-4">
+                <h2 class="tw-text-3xl max-md:tw-text-xl">Legal</h2>
+                <div class="tw-flex tw-flex-col tw-gap-3 max-md:tw-text-sm">
+                    <a href="#contactus" class="footer-link">Terms of Use</a>
+                    <a href="#contactus" class="footer-link">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
+        integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
+        integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./index.js"></script>
+    <script src="https://plugin-code.salesmartly.com/js/project_258865_265655_1740841258.js"></script>
+</html>
