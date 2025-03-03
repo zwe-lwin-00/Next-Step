@@ -32,6 +32,7 @@
         />
         <script src="https://cdn.tailwindcss.com"></script>
         <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+        <script src="script.js" defer></script>
     </head>
     <body
         class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-black tw-text-white"
@@ -53,11 +54,12 @@
                 <div
                     class="tw-flex tw-h-full tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col max-lg:tw-place-items-end max-lg:tw-gap-5 lg:tw-mx-auto lg:tw-place-items-center"
                 >
-                    <a class="header-links" href="">Home</a>
-                    <a class="header-links" href="#companyinfo">About Us</a>
-                    <a class="header-links" href="#careers">Careers</a>
-                    <a class="header-links" href="#contactus">Contact Us</a>
-                    <a class="header-links" href="#reviews">Reviews</a>
+                    <a id="home-link" class="header-links" href="">Home</a>
+                    <a id="about-link" class="header-links" href="#companyinfo">About Us</a>
+                    <a id="careers-link" class="header-links" href="#careers">Careers</a>
+                    <a id="contact-link" class="header-links" href="#contactus">Contact Us</a>
+                    <a id="reviews-link" class="header-links" href="#reviews">Reviews</a>
+                    
                 </div>
                 <div
                     class="tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full max-md:tw-flex-col max-md:tw-place-content-center"
@@ -71,6 +73,11 @@
                         <i class="bi bi-arrow-right"></i>
                     </a>
                 </div>
+            </div>
+            <div class="tw-flex tw-gap-2">
+                <!-- Language switcher -->
+                <button class="tw-bg-transparent tw-text-white" onclick="switchLanguage('en')">English</button>
+                <button class="tw-bg-transparent tw-text-white" onclick="switchLanguage('de')">Deutsch</button>
             </div>
             <button
                 class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-white lg:tw-hidden"
@@ -92,27 +99,29 @@
                 >
                     <div
                         class="reveal-up gradient-text tw-text-center tw-text-3xl tw-font-semibold tw-uppercase tw-leading-[50px] max-lg:tw-text-4xl max-md:tw-leading-snug"
-                    >
+                        id="hero-heading">
                         <span class=""> Grow with us and unlock your full potential as we build a brighter future together. </span>
                         <br />
                         <!-- <span class=""> with SaaS templates </span> -->
                     </div>
                     <div
                         class="reveal-up tw-mt-10 tw-max-w-[450px] tw-p-2 tw-text-center tw-text-gray-300 max-lg:tw-max-w-full"
-                    >
-                    Hero sections usually come right after the menu. They're designed to grab attention and keep it, hopefully encouraging visitors to click the button below.
+                        id="hero-description">
+                        Hero sections usually come right after the menu. They're designed to grab attention and keep it, hopefully encouraging visitors to click the button below.
                     </div>
 
                     <div
                         class="reveal-up tw-mt-10 tw-flex tw-place-items-center tw-gap-4"
                     >
                         <a
+                            id="get-started-btn"
                             class="btn tw-bg-[#7e22ce85] tw-shadow-lg tw-shadow-primary tw-transition-transform tw-duration-[0.3s] hover:tw-scale-x-[1.03]"
                             href=""
                         >
                             Get started
                         </a>
                         <a
+                            id="learn-more-btn"
                             class="btn tw-flex tw-gap-2 !tw-bg-black !tw-text-white tw-transition-colors tw-duration-[0.3s] hover:!tw-bg-white hover:!tw-text-black"
                             href=""
                         >
@@ -149,7 +158,7 @@
         <section
             class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-8"
         >
-            <p class="reveal-up tw-text-3xl max-md:tw-text-xl" style="font-size: 14px;">
+            <p id="industries-text" class="reveal-up tw-text-3xl max-md:tw-text-xl" style="font-size: 14px;">
                 Industries that are currently available to participate <br>
                 - Technology, Finance, Healthcare, Education, Creative, Manufacturing & Engineering, Retail & Service, Legal, Public Sector & Non-Profit, Media & Communications.
             </p>
@@ -166,7 +175,7 @@
                 <div
                     class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center"
                 >
-                    <h2
+                    <h2 id="steps-heading"
                         class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-3xl"
                     >
                         STEPS
@@ -190,12 +199,12 @@
                             </div>
                         </div>
                         <div class="tw-flex tw-flex-col tw-gap-4 tw-p-2">
-                            <h3
+                            <h3 id="job-position-heading"
                                 class="tw-mt-8 tw-text-2xl tw-font-normal max-md:tw-text-xl"
                             >
                                 Apply for the job position
                             </h3>
-                            <div class="tw-text-gray-300">
+                            <div id="job-position-description" class="tw-text-gray-300">
                                 Don’t miss the chance to be part of something great. Apply for the job position.
                             </div>
                         </div>
@@ -215,12 +224,12 @@
                             </div>
                         </div>
                         <div class="tw-flex tw-flex-col tw-gap-4 tw-p-2">
-                            <h3
+                            <h3 id="confirmation-heading" 
                                 class="tw-mt-8 tw-text-2xl tw-font-normal max-md:tw-text-xl"
                             >
                                 Receive a confirmation
                             </h3>
-                            <div class="tw-text-gray-300">
+                            <div id="confirmation-description" class="tw-text-gray-300">
                                 You will receive a confirmation once your application has been successfully submitted.
                             </div>
                         </div>
@@ -240,12 +249,12 @@
                             </div>
                         </div>
                         <div class="tw-flex tw-flex-col tw-gap-4 tw-p-2">
-                            <h3
+                            <h3 id="answer-heading"
                                 class="tw-mt-8 tw-text-2xl tw-font-normal max-md:tw-text-xl"
                             >
                                 Expect an anwser in a day
                             </h3>
-                            <div class="tw-text-gray-300">
+                            <div id="answer-description" class="tw-text-gray-300">
                                 You can expect an answer within a day after we review your application.
                             </div>
                         </div>
@@ -258,10 +267,10 @@
         <section
             class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-8"
         id="companyinfo">
-            <h2 class="reveal-up tw-text-3xl max-md:tw-text-xl">
+            <h2 id="companyinfo-heading" class="reveal-up tw-text-3xl max-md:tw-text-xl">
                 About the company
             </h2>
-            <p class="tw-text-center tw-max-w-xl">
+            <p id="companyinfo-description" class="tw-text-center tw-max-w-xl">
             We have established partnerships with more than 100 companies, creating numerous job openings.
             </p>
 
@@ -368,12 +377,12 @@
                     class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center"
                 >
                     
-                    <h2
+                    <h2 id="reasonsToGrow-heading"
                         class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-2xl"
                     >
                     4 good reasons to grow with us
                     </h2>
-                    <p
+                    <p id="reasonsToGrow-description"
                         class="tw-text-1xl tw-font-medium tw-text-gray-200 max-md:tw-text-2xl"
                     >
                     Join us and discover four great reasons to grow your career with our dynamic team and exciting opportunities.
@@ -390,10 +399,10 @@
                         </div>
 
                         <div class="tw-flex tw-flex-col tw-gap-4">
-                            <h3 class="tw-text-2xl max-md:tw-text-xl">
+                            <h3 id="careerGrowth-heading" class="tw-text-2xl max-md:tw-text-xl">
                                 Career Growth
                             </h3>
-                            <p class="tw-text-gray-300 max-md:tw-text-sm">
+                            <p id="careerGrowth-description" class="tw-text-gray-300 max-md:tw-text-sm">
                                 We offer excellent opportunities for both personal
                                 and professional development, providing
                                 continuous learning and career advancement
@@ -409,10 +418,10 @@
                         </div>
 
                         <div class="tw-flex tw-flex-col tw-gap-4">
-                            <h3 class="tw-text-2xl max-md:tw-text-xl">
+                            <h3 id="competitiveBenefits-heading" class="tw-text-2xl max-md:tw-text-xl">
                                 Competitive Benefits
                             </h3>
-                            <p class="tw-text-gray-300 max-md:tw-text-sm">
+                            <p id="competitiveBenefits-description" class="tw-text-gray-300 max-md:tw-text-sm">
                                 Enjoy a competitive salary and a comprehensive benefits package, 
                                 including health insurance, retirement plans, 
                                 and other perks designed to support your well-being and financial security.
@@ -428,10 +437,10 @@
                         </div>
 
                         <div class="tw-flex tw-flex-col tw-gap-4">
-                            <h3 class="tw-text-2xl max-md:tw-text-xl">
+                            <h3 id="collaborativeEnvironment-heading" class="tw-text-2xl max-md:tw-text-xl">
                                 Collaborative Environment
                             </h3>
-                            <p class="tw-text-gray-300 max-md:tw-text-sm">
+                            <p id="collaborativeEnvironment-description" class="tw-text-gray-300 max-md:tw-text-sm">
                                 Work alongside passionate and supportive colleagues 
                                 who are always eager to collaborate, share knowledge, 
                                 and help each other succeed.
@@ -447,10 +456,10 @@
                         </div>
 
                         <div class="tw-flex tw-flex-col tw-gap-4">
-                            <h3 class="tw-text-2xl max-md:tw-text-xl">
+                            <h3 id="diverseOpportunities-heading" class="tw-text-2xl max-md:tw-text-xl">
                                 Diverse Opportunities
                             </h3>
-                            <p class="tw-text-gray-300 max-md:tw-text-sm">
+                            <p id="diverseOpportunities-description" class="tw-text-gray-300 max-md:tw-text-sm">
                                 With over 100 partner companies, you’ll have access to a wide range of job roles. 
                                 This opens up various career paths, 
                                 allowing you to explore opportunities in different industries.
@@ -479,10 +488,10 @@
                     class="submit-form tw-flex tw-w-full tw-max-w-[80%] tw-place-content-center tw-place-items-center tw-justify-between tw-gap-3 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-6 max-md:tw-max-w-full max-md:tw-flex-col"
                 >
                     <div class="tw-flex tw-flex-col tw-gap-1">
-                        <h2 class="tw-text-3xl tw-text-gray-300 max-md:tw-text-xl">
+                        <h2 id="submitForm-heading" class="tw-text-3xl tw-text-gray-300 max-md:tw-text-xl">
                             Submit the form with the requested information
                         </h2>
-                        <div class="tw-text-gray-300">Please fill out the form below.</div>
+                        <div id="submitForm-description" class="tw-text-gray-300">Please fill out the form below.</div>
                     </div>
 
                     <form
@@ -562,11 +571,11 @@
                     </h3> -->
 
                     <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
-                        <h4 class="tw-text-xl tw-font-medium">
+                        <h4 id="applyPosition-heading" class="tw-text-xl tw-font-medium">
                             <i class="bi bi-check-all !tw-text-2xl"></i>
                             Apply for the job position
                         </h4>
-                        <span
+                        <span id="applyPosition-description"
                             class="tw-text-lg tw-text-gray-300 max-md:tw-text-base"
                         >
                             Don’t miss the chance to be part of something great. 
@@ -574,11 +583,11 @@
                         </span>
                     </div>
                     <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
-                        <h4 class="tw-text-xl tw-font-medium">
+                        <h4 id="confirmation-heading" class="tw-text-xl tw-font-medium">
                             <i class="bi bi-check-all !tw-text-2xl"></i>
                             Receive a confirmation
                         </h4>
-                        <span
+                        <span id="confirmation-description"
                             class="tw-text-lg tw-text-gray-300 max-md:tw-text-base"
                         >
                         You will receive a confirmation once your application has been successfully submitted, 
@@ -586,11 +595,11 @@
                         </span>
                     </div>
                     <div class="tw-mt-4 tw-flex tw-flex-col tw-gap-3">
-                        <h4 class="tw-text-xl tw-font-medium">
+                        <h4 id="answerInDay-heading" class="tw-text-xl tw-font-medium">
                             <i class="bi bi-check-all !tw-text-2xl"></i>
                             Expect an answer in a day
                         </h4>
-                        <span
+                        <span id="answerInDay-description"
                             class="tw-text-lg tw-text-gray-300 max-md:tw-text-base"
                         >
                         You can expect an answer within a day after we review your application, 
@@ -608,12 +617,12 @@
         <section
             class="tw-mt-5 tw-flex tw-min-h-[10vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%]"
         id="reviews">
-            <h3
+            <h3 id="reviews-heading"
                 class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-2xl"
             >
                  Achievement and Motivation
             </h3>
-            <p class="tw-text-center tw-max-w-xl">
+            <p id="reviews-description" class="tw-text-center tw-max-w-xl">
             These programs inspire motivation and help achieve goals once thought out of reach. 
             With clear guidance and support, challenges turn into wins, 
             making the journey truly rewarding.
@@ -636,7 +645,7 @@
                             
                             <p class="mt-2 text-lg text-white-700">⭐⭐⭐⭐⭐</p>
                             <h2 class="mt-4 text-2xl font-bold text-white-800">DEJANA E</h2>
-                            <p class="mt-2 text-lg text-white-700">
+                            <p class="mt-2 text-lg text-white-700" id="slide1text">
                                 Thank you so much for this amazing opportunity! 
                                 I successfully completed the challenge and earned my dream watch—ROLEX 'SPIDER-MAN' 
                                 GMT-MASTER II! The process was smooth, the activity was simple and fun, and the team’s guidance was spot on. 
@@ -651,7 +660,7 @@
                             
                             <p class="mt-2 text-lg text-white-700">⭐⭐⭐⭐⭐</p>
                             <h2 class="mt-4 text-2xl font-bold text-white-800">CRAIG M</h2>
-                            <p class="mt-2 text-lg text-white-700">
+                            <p class="mt-2 text-lg text-white-700" id="slide2text">
                                 I'm absolutely thrilled! After hitting my goals, 
                                 I received the Nike Air Mag 'Back To The Future' sneakers. 
                                 The design is beyond cool, and every time I wear them, 
@@ -666,7 +675,7 @@
                             
                             <p class="mt-2 text-lg text-white-700">⭐⭐⭐⭐⭐</p>
                             <h2 class="mt-4 text-2xl font-bold text-white-800">Alexander Kirichenko</h2>
-                            <p class="mt-2 text-lg text-white-700">
+                            <p class="mt-2 text-lg text-white-700" id="slide3text">
                                 Received my Channel bag today and I couldn't be more thrilled! The whole challenge was so easy to complete, 
                                 no stress at all, and I ended up with this amazing luxury bag. 
                                 Huge thanks to the team for their support throughout the process. 
@@ -679,7 +688,7 @@
                             
                             <p class="mt-2 text-lg text-white-700">⭐⭐⭐⭐⭐</p>
                             <h2 class="mt-4 text-2xl font-bold text-white-800">CAMERON L</h2>
-                            <p class="mt-2 text-lg text-white-700">
+                            <p class="mt-2 text-lg text-white-700" id="slide4text">
                                 I'm beyond thrilled to have received my dream watch-Rolex Submariner 'Hulk'! 
                                 The entire process was easy and enjoyable, with great guidance and support from the team. 
                                 Owning this iconic Rolex is truly a huge reward! I'm so grateful for this opportunity 
@@ -692,7 +701,7 @@
                             
                             <p class="mt-2 text-lg text-white-700">⭐⭐⭐⭐⭐</p>
                             <h2 class="mt-4 text-2xl font-bold text-white-800">L CASHEL</h2>
-                            <p class="mt-2 text-lg text-white-700">
+                            <p class="mt-2 text-lg text-white-700" id="slide5text">
                                 This event has truly exceeded my expectations!
                                 After working hard to meet the goals, I'm now the proud owner of a Rolex® Oyster Perpetual 41mm
                                 'Tiffany'! The watch is absolutely stunning, with its unique color and elegant design. 
@@ -708,7 +717,7 @@
                             
                             <p class="mt-2 text-lg text-white-700">⭐⭐⭐⭐⭐</p>
                             <h2 class="mt-4 text-2xl font-bold text-white-800">Daniel</h2>
-                            <p class="mt-2 text-lg text-white-700">
+                            <p class="mt-2 text-lg text-white-700" id="slide6text">
                                 Joining this event was a great decision! I achieved my goal and received a Balenciaga bag as a reward. 
                                 The process was straightforward with excellent guidance from the team. 
                                 The bag is incredibly stylish and luxurious, a perfect fit for my collection. 
@@ -721,7 +730,7 @@
                             
                             <p class="mt-2 text-lg text-white-700">⭐⭐⭐⭐⭐</p>
                             <h2 class="mt-4 text-2xl font-bold text-white-800">BAILEY A</h2>
-                            <p class="mt-2 text-lg text-white-700">
+                            <p class="mt-2 text-lg text-white-700" id="slide7text">
                                 Absolutely thrilled with my new Rolex Daytona
                                 'Darth Vader! The sleek design and craftsmanship are unmatched. 
                                 Truly a dream come true-thank you for this amazing reward!
@@ -733,7 +742,7 @@
                             
                             <p class="mt-2 text-lg text-white-700">⭐⭐⭐⭐⭐</p>
                             <h2 class="mt-4 text-2xl font-bold text-white-800">ADDISON G</h2>
-                            <p class="mt-2 text-lg text-white-700">
+                            <p class="mt-2 text-lg text-white-700" id="slide8text">
                                 Winning the Rolex GMT-Master Il 'Batman' was a game-changer! 
                                 It shows that hard work and dedication truly pay off. 
                                 This reward motivates me to aim higher-join now and unlock your own success!
