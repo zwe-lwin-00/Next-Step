@@ -47,7 +47,31 @@ const translations = {
         slide5text: "This event has truly exceeded my expectations! After working hard to meet the goals, I'm now the proud owner of a Rolex® Oyster Perpetual 41mm 'Tiffany'! The watch is absolutely stunning, with its unique color and elegant design. Throughout the process, the team's support was amazing, and everything from the training to the task instructions was very clear. The best part is there were no hidden fees, making it a totally worthwhile experience. If you want to own a luxury watch, this is definitely an opportunity you shouldn't miss!",
         slide6text: "Joining this event was a great decision! I achieved my goal and received a Balenciaga bag as a reward. The process was straightforward with excellent guidance from the team. The bag is incredibly stylish and luxurious, a perfect fit for my collection. Highly recommend this event to anyone looking for amazing rewards!",
         slide7text: "Absolutely thrilled with my new Rolex Daytona 'Darth Vader! The sleek design and craftsmanship are unmatched. Truly a dream come true-thank you for this amazing reward!",
-        slide8text: "Winning the Rolex GMT-Master Il 'Batman' was a game-changer! It shows that hard work and dedication truly pay off. This reward motivates me to aim higher-join now and unlock your own success!"
+        slide8text: "Winning the Rolex GMT-Master Il 'Batman' was a game-changer! It shows that hard work and dedication truly pay off. This reward motivates me to aim higher-join now and unlock your own success!",
+        wereceivedheading: "We received 1,450 applications within 30 days. It's incredible!",
+        wereceivedtext: "We are thrilled to announce that we received 1,450 applications within just 30 days!  The response has been incredible,  and we’re excited to connect with such a talented pool of candidates.",
+        stillhavequestions: "Still have questions?",
+        ourcorporateheading: "ContactOur corporate partners",
+        ourcorporatetext: "We’ve built strong relationships with our corporate partners, enabling us to create new opportunities,share resources, and achieve mutual success.",
+        fcompany: "Company",
+        fhome: "Home",
+        fabout: "About Us",
+        fcareers: "Careers",
+        fwhychoose: "Why Choose Us",
+        fservice: "Services",
+        fcgrowth: "Career Growth",
+        fcompeti: "Competitive Benefits",
+        fcollab: "Collaborative Environment",
+        fdiverse: "Diverse Opportunities",
+        flegal: "Legal",
+        fteam: "Teams of Uses",
+        fprivacy: "Privacy Policy",
+
+
+
+        sampletest: "",
+        sampletest: "",
+        sampletest: "",
     
     
     
@@ -101,8 +125,31 @@ const translations = {
         slide5text: "Dieses Event hat meine Erwartungen wirklich übertroffen! Nachdem ich hart gearbeitet habe, um die Ziele zu erreichen, bin ich jetzt stolzer Besitzer einer Rolex® Oyster Perpetual 41mm 'Tiffany'! Die Uhr ist absolut atemberaubend, mit ihrer einzigartigen Farbe und eleganten Gestaltung. Während des gesamten Prozesses war die Unterstützung des Teams großartig, und alles, von der Schulung bis zu den Aufgabenanweisungen, war sehr klar. Das Beste daran ist, dass es keine versteckten Gebühren gab, was es zu einer völlig lohnenswerten Erfahrung macht. Wenn du eine Luxusuhr besitzen möchtest, ist dies definitiv eine Gelegenheit, die du nicht verpassen solltest!",
         slide6text: "Es war eine großartige Entscheidung, an diesem Event teilzunehmen! Ich habe mein Ziel erreicht und eine Balenciaga-Tasche als Belohnung erhalten. Der Prozess war unkompliziert mit exzellenter Anleitung vom Team. Die Tasche ist unglaublich stilvoll und luxuriös, perfekt für meine Sammlung. Ich kann dieses Event jedem empfehlen, der nach erstaunlichen Belohnungen sucht!",
         slide7text: "Ich bin absolut begeistert von meiner neuen Rolex Daytona 'Darth Vader! Das elegante Design und die Verarbeitung sind unübertroffen. Ein wahr gewordener Traum – vielen Dank für diese erstaunliche Belohnung!",
-        slide8text: "Das Gewinnen der Rolex GMT-Master Il 'Batman' war ein Wendepunkt! Es zeigt, dass harte Arbeit und Hingabe sich wirklich auszahlen. Diese Belohnung motiviert mich, noch höher zu zielen – mach jetzt mit und schalte deinen eigenen Erfolg frei!"
-    
+        slide8text: "Das Gewinnen der Rolex GMT-Master Il 'Batman' war ein Wendepunkt! Es zeigt, dass harte Arbeit und Hingabe sich wirklich auszahlen. Diese Belohnung motiviert mich, noch höher zu zielen – mach jetzt mit und schalte deinen eigenen Erfolg frei!",
+        wereceivedheading: "Innerhalb von 30 Tagen haben wir 1.450 Bewerbungen erhalten. Das ist unglaublich!",
+        wereceivedtext: "Wir freuen uns, mitteilen zu können, dass wir innerhalb von nur 30 Tagen 1.450 Bewerbungen erhalten haben! Die Resonanz war unglaublich und wir freuen uns, mit einem so talentierten Kandidatenpool in Kontakt zu treten.",
+        stillhavequestions: "Sie haben noch Fragen?",
+        ourcorporateheading: "KontaktUnsere Unternehmenspartner",
+        ourcorporatetext: "Wir haben starke Beziehungen zu unseren Unternehmenspartnern aufgebaut, die es uns ermöglichen, neue Möglichkeiten zu schaffen, Ressourcen zu teilen und gemeinsamen Erfolg zu erzielen.",
+        fcompany: "Unternehmen",
+        fhome: "Home",
+        fabout: "Über uns",
+        fcareers: "Karriere",
+        fwhychoose: "Warum Sie sich für uns entscheiden sollten",
+        fservice: "Dienste",
+        fcgrowth: "Karrierewachstum",
+        fcompeti: "Wettbewerbsvorteile",
+        fcollab: "Kooperatives Umfeld",
+        fdiverse: "Vielfältige Möglichkeiten",
+        flegal: "Rechtliches",
+        fteam: "Teams der Nutzung",
+        fprivacy: "Datenschutzrichtlinie",
+
+
+
+        sampletest: "",
+        sampletest: "",
+        sampletest: "",
     
     
     
@@ -174,6 +221,42 @@ function switchLanguage(language) {
     document.getElementById("slide6text").textContent = translations[language].slide6text;
     document.getElementById("slide7text").textContent = translations[language].slide7text;
     document.getElementById("slide8text").textContent = translations[language].slide8text;
+
+    
+    document.getElementById("wereceivedheading").textContent = translations[language].wereceivedheading;
+    document.getElementById("wereceivedtext").textContent = translations[language].wereceivedtext;
+
+
+
+    
+    document.getElementById("stillhavequestions").textContent = translations[language].stillhavequestions;
+    document.getElementById("ourcorporateheading").textContent = translations[language].ourcorporateheading;
+    document.getElementById("ourcorporatetext").textContent = translations[language].ourcorporatetext;
+
+
+
+    
+    document.getElementById("fcompany").textContent = translations[language].fcompany;
+    document.getElementById("fhome").textContent = translations[language].fhome;
+    document.getElementById("fabout").textContent = translations[language].fabout;
+    document.getElementById("fcareers").textContent = translations[language].fcareers;
+    document.getElementById("fwhychoose").textContent = translations[language].fwhychoose;
+
+
+
+
+
+
+
+    
+    document.getElementById("fservice").textContent = translations[language].fservice;
+    document.getElementById("fcgrowth").textContent = translations[language].fcgrowth;
+    document.getElementById("fcompeti").textContent = translations[language].fcompeti;
+    document.getElementById("fcollab").textContent = translations[language].fcollab;
+    document.getElementById("fdiverse").textContent = translations[language].fdiverse;
+    document.getElementById("flegal").textContent = translations[language].flegal;
+    document.getElementById("fteam").textContent = translations[language].fteam;
+    document.getElementById("fprivacy").textContent = translations[language].fprivacy;
 
 
 
