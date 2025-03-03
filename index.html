@@ -30,6 +30,8 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
     </head>
     <body
         class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-black tw-text-white"
@@ -152,6 +154,8 @@
                 - Technology, Finance, Healthcare, Education, Creative, Manufacturing & Engineering, Retail & Service, Legal, Public Sector & Non-Profit, Media & Communications.
             </p>
         </section>
+
+        
 
         <section
             class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-6"
@@ -602,7 +606,7 @@
 
 
         <section
-            class="tw-mt-5 tw-flex tw-min-h-[80vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%]"
+            class="tw-mt-5 tw-flex tw-min-h-[10vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%]"
         id="reviews">
             <h3
                 class="tw-text-4xl tw-font-medium tw-text-gray-200 max-md:tw-text-2xl"
@@ -614,256 +618,148 @@
             With clear guidance and support, challenges turn into wins, 
             making the journey truly rewarding.
             </p>
-            <!-- Testimonials -->
-            <div
-                class="tw-mt-8 tw-gap-10 tw-space-y-8 max-md:tw-columns-1 lg:tw-columns-2 xl:tw-columns-3"
-            >
-                <div
-                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]"
-                >
-                <img
-                                src="https://onecdn.io/media/ebeed5ac-d2a5-49a5-80f3-709f096809db/sm2x"
-                                class="tw-h-full tw-w-full tw-object-cover"
-                                alt="women"
-                            />
-                    <p class="tw-mt-4 tw-text-gray-300">
-                        Thank you so much for this amazing opportunity! I successfully completed the challenge and earned my dream watch—ROLEX 'SPIDER-MAN' GMT-MASTER II! The process was smooth, the activity was simple and fun, and the team’s guidance was spot on. Whenever I faced challenges, the support I received from the team helped me reach my goal. To own this unique Rolex is truly a priceless reward! I highly recommend everyone to join this event—it's an opportunity you don't want to miss!
-                    </p>
+            
+        </section>
 
-                    <div class="tw-flex tw-place-items-center tw-gap-3">
-                        <div
-                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
-                        >
-                            <img
-                                src="./assets/images/people/women.jpg"
-                                class="tw-h-full tw-w-full tw-object-cover"
-                                alt="women"
-                            />
-                        </div>
-                        <div class="tw-flex tw-flex-col tw-gap-1">
-                            <div class="tw-font-semibold">DEJANA E</div>
-                            <div class="tw-text-gray-400">⭐⭐⭐⭐⭐</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div
-                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]"
-                >
-                <img
-                    src="https://onecdn.io/media/c06251c3-5216-4568-b345-795dd0ce195f/sm2x"
-                    class="tw-h-full tw-w-full tw-object-cover"
-                    alt="man"
-                />
-                    <p class="tw-mt-4 tw-text-gray-300">
-                        I'm absolutely thrilled! After hitting my goals, 
-                        I received the Nike Air Mag 'Back To The Future' sneakers. 
-                        The design is beyond cool, and every time I wear them, 
-                        I feel like I’ve traveled to the future. The whole process was smooth, 
-                        and the team was super helpful. I love how this event combines challenge 
-                        and reward. Highly recommend it to fellow sneakerheads!
-                    </p>
 
-                    <div class="tw-flex tw-place-items-center tw-gap-3">
-                        <div
-                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
-                        >
-                            <img
-                                src="./assets/images/people/man2.jpg"
-                                class="tw-h-full tw-w-full tw-object-cover"
-                                alt="man"
-                            />
+        <!-- Carousel Section -->
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-8"
+        >
+            <div x-data="{ activeSlide: 0 }" x-init="setInterval(() => activeSlide = (activeSlide === 7) ? 0 : activeSlide + 1, 3000)" class="relative w-full sm:w-full md:w-3/5 mx-auto">
+                <!-- Carousel Wrapper -->
+                <div class="submit-form relative overflow-hidden">
+                    <div class="flex transition-transform duration-500 ease-in-out" :style="'transform: translateX(-' + activeSlide * 100 + '%)'">
+                        <!-- Slide 1 -->
+                        <div class="w-full flex-shrink-0 text-center p-4">
+                            <img src="https://onecdn.io/media/ebeed5ac-d2a5-49a5-80f3-709f096809db/sm2x" alt="Slide 1" class="w-full h-98 object-cover">
+                            
+                            <p class="mt-2 text-lg text-white-700">⭐⭐⭐⭐⭐</p>
+                            <h2 class="mt-4 text-2xl font-bold text-white-800">DEJANA E</h2>
+                            <p class="mt-2 text-lg text-white-700">
+                                Thank you so much for this amazing opportunity! 
+                                I successfully completed the challenge and earned my dream watch—ROLEX 'SPIDER-MAN' 
+                                GMT-MASTER II! The process was smooth, the activity was simple and fun, and the team’s guidance was spot on. 
+                                Whenever I faced challenges, the support I received from the team helped me reach my goal. 
+                                To own this unique Rolex is truly a priceless reward! 
+                                I highly recommend everyone to join this event—it's an opportunity you don't want to miss!
+                            </p>
                         </div>
-                        <div class="tw-flex tw-flex-col tw-gap-1">
-                            <div class="tw-font-semibold">CRAIG M</div>
-                            <div class="tw-text-gray-400">⭐⭐⭐⭐⭐</div>
+                        <!-- Slide 2 -->
+                        <div class="w-full flex-shrink-0 text-center p-4">
+                            <img src="https://onecdn.io/media/c06251c3-5216-4568-b345-795dd0ce195f/sm2x" alt="Slide 2" class="w-full h-98 object-cover">
+                            
+                            <p class="mt-2 text-lg text-white-700">⭐⭐⭐⭐⭐</p>
+                            <h2 class="mt-4 text-2xl font-bold text-white-800">CRAIG M</h2>
+                            <p class="mt-2 text-lg text-white-700">
+                                I'm absolutely thrilled! After hitting my goals, 
+                                I received the Nike Air Mag 'Back To The Future' sneakers. 
+                                The design is beyond cool, and every time I wear them, 
+                                I feel like I’ve traveled to the future. The whole process was smooth, 
+                                and the team was super helpful. I love how this event combines challenge 
+                                and reward. Highly recommend it to fellow sneakerheads!
+                            </p>
                         </div>
-                    </div>
-                </div>
-                <div
-                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]"
-                >
-                <img
-                    src="https://onecdn.io/media/0078e3f6-e28a-4fcb-9253-3c311ee2463a/sm2x"
-                    class="tw-h-full tw-w-full tw-object-cover"
-                    alt="man"
-                />
-                    <p class="tw-mt-4 tw-text-gray-300">
-                        Received my Channel bag today and I couldn't be more thrilled! The whole challenge was so easy to complete, no stress at all, and I ended up with this amazing luxury bag. Huge thanks to the team for their support throughout the process. The quality and design of the bag are top-notch, definitely worth it! Highly recommend everyone to join!
-                    </p>
-
-                    <div class="tw-flex tw-place-items-center tw-gap-3">
-                        <div
-                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
-                        >
-                            <img
-                                src="./assets/images/people/women.jpg"
-                                class="tw-h-full tw-w-full tw-object-cover"
-                                alt="man"
-                            />
+                        <!-- Slide 3 -->
+                        <div class="w-full flex-shrink-0 text-center p-4">
+                            <img src="https://onecdn.io/media/0078e3f6-e28a-4fcb-9253-3c311ee2463a/sm2x" alt="Slide 3" class="w-full h-98 object-cover">
+                            
+                            <p class="mt-2 text-lg text-white-700">⭐⭐⭐⭐⭐</p>
+                            <h2 class="mt-4 text-2xl font-bold text-white-800">Alexander Kirichenko</h2>
+                            <p class="mt-2 text-lg text-white-700">
+                                Received my Channel bag today and I couldn't be more thrilled! The whole challenge was so easy to complete, 
+                                no stress at all, and I ended up with this amazing luxury bag. 
+                                Huge thanks to the team for their support throughout the process. 
+                                The quality and design of the bag are top-notch, definitely worth it! Highly recommend everyone to join!
+                            </p>
                         </div>
-                        <div class="tw-flex tw-flex-col tw-gap-1">
-                            <div class="tw-font-semibold">Alexander Kirichenko</div>
-                            <div class="tw-text-gray-400">⭐⭐⭐⭐⭐</div>
+                        <!-- Slide 4 -->
+                        <div class="w-full flex-shrink-0 text-center p-4">
+                            <img src="https://onecdn.io/media/3a15aeb3-c995-4e15-92e1-b83a3868a85d/sm2x" alt="Slide 4" class="w-full h-98 object-cover">
+                            
+                            <p class="mt-2 text-lg text-white-700">⭐⭐⭐⭐⭐</p>
+                            <h2 class="mt-4 text-2xl font-bold text-white-800">CAMERON L</h2>
+                            <p class="mt-2 text-lg text-white-700">
+                                I'm beyond thrilled to have received my dream watch-Rolex Submariner 'Hulk'! 
+                                The entire process was easy and enjoyable, with great guidance and support from the team. 
+                                Owning this iconic Rolex is truly a huge reward! I'm so grateful for this opportunity 
+                                and will definitely recommend this event to my friends. It's a fantastic opportunity that's worth joining!
+                            </p>
                         </div>
-                    </div>
-                </div>
-                <div
-                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]"
-                >
-                <img
-                    src="https://onecdn.io/media/3a15aeb3-c995-4e15-92e1-b83a3868a85d/sm2x"
-                    class="tw-h-full tw-w-full tw-object-cover"
-                    alt="man"
-                />
-                    <p class="tw-mt-4 tw-text-gray-300">
-                        I'm beyond thrilled to have received my dream watch-Rolex Submariner 'Hulk'! The entire process was easy and enjoyable, with great guidance and support from the team. Owning this iconic Rolex is truly a huge reward! I'm so grateful for this opportunity and will definitely recommend this event to my friends. It's a fantastic opportunity that's worth joining!
-                    </p>
-
-                    <div class="tw-flex tw-place-items-center tw-gap-3">
-                        <div
-                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
-                        >
-                            <img
-                                src="./assets/images/people/man.jpg"
-                                class="tw-h-full tw-w-full tw-object-cover"
-                                alt="man"
-                            />
+                        <!-- Slide 5 -->
+                        <div class="w-full flex-shrink-0 text-center p-4">
+                            <img src="https://onecdn.io/media/ad3475d0-e37c-47ca-a09c-2abfd4486b2d/sm2x" alt="Slide 5" class="w-full h-98 object-cover">
+                            
+                            <p class="mt-2 text-lg text-white-700">⭐⭐⭐⭐⭐</p>
+                            <h2 class="mt-4 text-2xl font-bold text-white-800">L CASHEL</h2>
+                            <p class="mt-2 text-lg text-white-700">
+                                This event has truly exceeded my expectations!
+                                After working hard to meet the goals, I'm now the proud owner of a Rolex® Oyster Perpetual 41mm
+                                'Tiffany'! The watch is absolutely stunning, with its unique color and elegant design. 
+                                Throughout the process, the team's support was amazing, and everything from 
+                                the training to the task instructions was very clear. The best part is there were no hidden fees, 
+                                making it a totally worthwhile experience. If you want to own a luxury watch, 
+                                this is definitely an opportunity you shouldn't miss!
+                            </p>
                         </div>
-                        <div class="tw-flex tw-flex-col tw-gap-1">
-                            <div class="tw-font-semibold">CAMERON L</div>
-                            <div class="tw-text-gray-400">⭐⭐⭐⭐⭐</div>
+                        <!-- Slide 6 -->
+                        <div class="w-full flex-shrink-0 text-center p-4">
+                            <img src="https://onecdn.io/media/9cd54c16-b98e-4782-9228-4ecb6161db35/sm2x" alt="Slide 6" class="w-full h-98 object-cover">
+                            
+                            <p class="mt-2 text-lg text-white-700">⭐⭐⭐⭐⭐</p>
+                            <h2 class="mt-4 text-2xl font-bold text-white-800">Daniel</h2>
+                            <p class="mt-2 text-lg text-white-700">
+                                Joining this event was a great decision! I achieved my goal and received a Balenciaga bag as a reward. 
+                                The process was straightforward with excellent guidance from the team. 
+                                The bag is incredibly stylish and luxurious, a perfect fit for my collection. 
+                                Highly recommend this event to anyone looking for amazing rewards!
+                            </p>
                         </div>
-                    </div>
-                </div>
-
-                <div
-                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]"
-                >
-                <img
-                    src="https://onecdn.io/media/ad3475d0-e37c-47ca-a09c-2abfd4486b2d/sm2x"
-                    class="tw-h-full tw-w-full tw-object-cover"
-                    alt="man"
-                />
-                    <p class="tw-mt-4 tw-text-gray-300">
-                        This event has truly exceeded my expectations!
-                        After working hard to meet the goals, I'm now the proud owner of a Rolex® Oyster Perpetual 41mm
-                        'Tiffany'! The watch is absolutely stunning, with its unique color and elegant design. Throughout the process, the team's support was amazing, and everything from the training to the task instructions was very clear. The best part is there were no hidden fees, making it a totally worthwhile experience. If you want to own a luxury watch, this is definitely an opportunity you shouldn't miss!
-                    </p>
-
-                    <div class="tw-flex tw-place-items-center tw-gap-3">
-                        <div
-                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
-                        >
-                            <img
-                                src="./assets/images/people/man2.jpg"
-                                class="tw-h-full tw-w-full tw-object-cover"
-                                alt="man"
-                            />
+                        <!-- Slide 7 -->
+                        <div class="w-full flex-shrink-0 text-center p-4">
+                            <img src="https://onecdn.io/media/d1efde7c-4132-4c62-989a-2ce765bad1dd/sm2x" alt="Slide 7" class="w-full h-98 object-cover">
+                            
+                            <p class="mt-2 text-lg text-white-700">⭐⭐⭐⭐⭐</p>
+                            <h2 class="mt-4 text-2xl font-bold text-white-800">BAILEY A</h2>
+                            <p class="mt-2 text-lg text-white-700">
+                                Absolutely thrilled with my new Rolex Daytona
+                                'Darth Vader! The sleek design and craftsmanship are unmatched. 
+                                Truly a dream come true-thank you for this amazing reward!
+                            </p>
                         </div>
-                        <div class="tw-flex tw-flex-col tw-gap-1">
-                            <div class="tw-font-semibold">L CASHEL</div>
-                            <div class="tw-text-gray-400">⭐⭐⭐⭐⭐</div>
+                        <!-- Slide 8 -->
+                        <div class="w-full flex-shrink-0 text-center p-4">
+                            <img src="https://onecdn.io/media/bc3ff491-7447-4b83-bacb-85d617ba7a59/sm2x" alt="Slide 8" class="w-full h-98 object-cover">
+                            
+                            <p class="mt-2 text-lg text-white-700">⭐⭐⭐⭐⭐</p>
+                            <h2 class="mt-4 text-2xl font-bold text-white-800">ADDISON G</h2>
+                            <p class="mt-2 text-lg text-white-700">
+                                Winning the Rolex GMT-Master Il 'Batman' was a game-changer! 
+                                It shows that hard work and dedication truly pay off. 
+                                This reward motivates me to aim higher-join now and unlock your own success!
+                            </p>
                         </div>
                     </div>
                 </div>
 
+                <!-- Controls -->
+                <div class="absolute inset-y-0 left-0 flex items-center justify-center">
+                    <button @click="activeSlide = (activeSlide === 0) ? 2 : activeSlide - 1" class="text-white bg-black p-2 rounded-full hover:bg-gray-700">
+                        <span class="font-bold text-xl">&lt;</span>
+                    </button>
+                </div>
+                <div class="absolute inset-y-0 right-0 flex items-center justify-center">
+                    <button @click="activeSlide = (activeSlide === 2) ? 0 : activeSlide + 1" class="text-white bg-black p-2 rounded-full hover:bg-gray-700">
+                        <span class="font-bold text-xl">&gt;</span>
+                    </button>
+                </div>
 
-                <!-- <div
-                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]"
-                >
-                <img
-                    src="https://onecdn.io/media/9cd54c16-b98e-4782-9228-4ecb6161db35/sm2x"
-                    class="tw-h-full tw-w-full tw-object-cover"
-                    alt="man"
-                />
-                    <p class="tw-mt-4 tw-text-gray-300">
-                        Joining this event was a great decision! I achieved my goal and received a Balenciaga bag as a reward. The process was straightforward with excellent guidance from the team. The bag is incredibly stylish and luxurious, a perfect fit for my collection. Highly recommend this event to anyone looking for amazing rewards!
-                    </p>
-
-                    <div class="tw-flex tw-place-items-center tw-gap-3">
-                        <div
-                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
-                        >
-                            <img
-                                src="./assets/images/people/man2.jpg"
-                                class="tw-h-full tw-w-full tw-object-cover"
-                                alt="man"
-                            />
-                        </div>
-                        <div class="tw-flex tw-flex-col tw-gap-1">
-                            <div class="tw-font-semibold">Daniel</div>
-                            <div class="tw-text-gray-400">⭐⭐⭐⭐⭐</div>
-                        </div>
-                    </div>
+                <!-- Indicator Dots -->
+                <!-- <div class="absolute bottom-4 w-full flex justify-center">
+                    <template x-for="(slide, index) in [0, 1, 2]" :key="index">
+                        <span @click="activeSlide = index" :class="{'bg-black': activeSlide === index, 'bg-gray-300': activeSlide !== index}" class="mx-2 w-3 h-3 rounded-full cursor-pointer transition-all"></span>
+                    </template>
                 </div> -->
-
-
-
-
-                <!-- WRONG FROM THIS -->
-                <!-- <div
-                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]"
-                >
-                <img
-                    src="https://onecdn.io/media/d1efde7c-4132-4c62-989a-2ce765bad1dd/sm2x"
-                    class="tw-h-full tw-w-full tw-object-cover"
-                    alt="man"
-                />
-                    <p class="tw-mt-4 tw-text-gray-300">
-                        Absolutely thrilled with my new Rolex Daytona
-                        'Darth Vader! The sleek design and craftsmanship are unmatched. 
-                        Truly a dream come true-thank you for this amazing reward!
-                    </p>
-
-                    <div class="tw-flex tw-place-items-center tw-gap-3">
-                        <div
-                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
-                        >
-                            <img
-                                src="./assets/images/people/man2.jpg"
-                                class="tw-h-full tw-w-full tw-object-cover"
-                                alt="man"
-                            />
-                        </div>
-                        <div class="tw-flex tw-flex-col tw-gap-1">
-                            <div class="tw-font-semibold">BAILEY A</div>
-                            <div class="tw-text-gray-400">⭐⭐⭐⭐⭐</div>
-                        </div>
-                    </div>
-                </div> -->
-
-                
-                <!-- <div
-                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-4 max-lg:tw-w-[320px]"
-                >
-                <img
-                    src="https://onecdn.io/media/bc3ff491-7447-4b83-bacb-85d617ba7a59/sm2x"
-                    class="tw-h-full tw-w-full tw-object-cover"
-                    alt="man"
-                />
-                    <p class="tw-mt-4 tw-text-gray-300">
-                        Winning the Rolex GMT-Master Il 'Batman' was a game-changer! It shows that hard work and dedication truly pay off. This reward motivates me to aim higher-join now and unlock your own success!
-                    </p>
-
-                    <div class="tw-flex tw-place-items-center tw-gap-3">
-                        <div
-                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
-                        >
-                            <img
-                                src="./assets/images/people/man2.jpg"
-                                class="tw-h-full tw-w-full tw-object-cover"
-                                alt="man"
-                            />
-                        </div>
-                        <div class="tw-flex tw-flex-col tw-gap-1">
-                            <div class="tw-font-semibold">ADDISON G</div>
-                            <div class="tw-text-gray-400">⭐⭐⭐⭐⭐</div>
-                        </div>
-                    </div>
-                </div> -->
-
-
             </div>
         </section>
 
