@@ -159,7 +159,7 @@ header > .collapsible-header{
   
 .carousel {
     display: inline-block;
-    animation: scroll 10s linear infinite;
+    animation: scroll 20s linear infinite;
 }
   
 .carousel-img {
@@ -172,7 +172,7 @@ header > .collapsible-header{
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-150%);
     }
 }
 
