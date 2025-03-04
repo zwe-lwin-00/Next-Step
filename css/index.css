@@ -148,6 +148,14 @@ header > .collapsible-header{
     width: 100%;
     max-width: 800px;
 }
+
+.carousel-container2 {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    max-width: 1000px; /* Or any other value as needed */
+}
+
   
 .carousel {
     display: inline-block;
