@@ -1,6 +1,10 @@
 // Language dictionary with translations for different elements
 const languageContent = {
     en: {
+        lffirstname:"First Name",
+        lflastname:"Last Name",
+        lfemail:"Email",
+        lfphone:"Phone Number",
         applyforapositionbtn:"Apply for a position",
         lhome:"Home",
         laboutus:"About Us",
@@ -69,6 +73,10 @@ const languageContent = {
         lfprivacy:"Privacy Policy",
     },
     de: { 
+      lffirstname:"Vorname",
+      lflastname:"Nachname",
+      lfemail:"E-Mail",
+      lfphone:"Telefonnummer",
       applyforapositionbtn:"Bewerben Sie sich für eine Stelle",
       lhome: "Startseite",
       laboutus: "Über uns",
@@ -138,6 +146,10 @@ const languageContent = {
   }
   ,
     ja: { 
+      lffirstname:"名",
+      lflastname:"姓",
+      lfemail:"メールアドレス",
+      lfphone:"電話番号",
       applyforapositionbtn:"求人に応募する",
       lhome: "ホーム",
       laboutus: "私たちについて",
@@ -207,6 +219,10 @@ const languageContent = {
   }
   ,
     th: { 
+      lffirstname:"ชื่อจริง",
+      lflastname:"นามสกุล",
+      lfemail:"อีเมล",
+      lfphone:"หมายเลขโทรศัพท์",
       applyforapositionbtn:"สมัครงาน",
       lhome: "หน้าแรก",
       laboutus: "เกี่ยวกับเรา",
@@ -276,6 +292,10 @@ const languageContent = {
   }
   ,
     zh: { 
+      lffirstname:"名字",
+      lflastname:"姓氏",
+      lfemail:"电子邮件",
+      lfphone:"电话号码",
       applyforapositionbtn:"申请职位",
       lhome: "首页",
       laboutus: "关于我们",
