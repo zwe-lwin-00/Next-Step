@@ -153,9 +153,9 @@ header > .collapsible-header{
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
-    max-width: 1000px; /* Or any other value as needed */
+    max-width: 100%; /* Or any other value as needed */
 }
-
+/* 
   
 .carousel {
     display: inline-block;
@@ -172,9 +172,73 @@ header > .collapsible-header{
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-150%);
+        transform: translateX(-100%);
+    }
+} */
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+    .carousel {
+        display: inline-block;
+        animation: scroll 30s linear infinite;
+    }
+      
+    .carousel-img {
+        display: inline-block;
+        margin: 0 20px;
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-200%);
+        }
     }
 }
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .carousel {
+        display: inline-block;
+        animation: scroll 30s linear infinite;
+    }
+      
+    .carousel-img {
+        display: inline-block;
+        margin: 0 20px;
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-800%);
+        }
+    }
+}
+
+/* Optional: For very small screens, make it even faster */
+@media screen and (max-width: 480px) {
+    .carousel {
+        display: inline-block;
+        animation: scroll 30s linear infinite;
+    }
+      
+    .carousel-img {
+        display: inline-block;
+        margin: 0 20px;
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-800%);
+        }
+    }
+}
+
 
 .footer-link{
     color: #c7c6c6;
